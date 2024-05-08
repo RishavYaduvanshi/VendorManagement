@@ -41,3 +41,7 @@ cd vendormetric
 ```shell
 python manage.py runserver
 ```
+### There are three endpoints
+##### 1. "vendors": "http://localhost:8000/api/vendors/"
+##### 2. "purchase_orders": "http://localhost:8000/api/purchase_orders/"
+##### 3. "Doumnents "http://localhost:8000/api/docs/swagger-ui/
