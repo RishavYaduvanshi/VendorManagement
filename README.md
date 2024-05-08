@@ -9,22 +9,38 @@ This guide will walk you through setting up a Python virtual environment, activa
 
 ## Steps
 
-### 1. Create a Python Virtual Environment
+### 1. Clone the Project
 
-First, create a virtual environment using the following command:
+First, clone the project repository:
+
+```shell
+git clone https://github.com/RishavYaduvanshi/VendorManagement.git
+```
+
+### 2. Create a Python Virtual Environment
+
+Navigate to the cloned project directory and create a virtual environment using the following command:
 
 ```shell
 python -m venv env
 ```
 
-### 2. Activate the Virtual Environment
+### 3. Activate the Virtual Environment
 
-Next, activate the virtual environment using the appropriate command for your operating system:
+Next, activate the virtual environment using the appropriate command for your operating system
+
+- For Windows:
 
 ```shell
 .\env\Scripts\activate
 ```
-### 3. Install Dependencies from requirements.txt
+
+- For macOS and Linux:
+
+```shell
+source env/bin/activate
+```
+### 4. Install Dependencies from "requirements.txt"
 
 With the virtual environment activated, you can install all the dependencies specified in the requirements.txt file using the following command:
 
@@ -32,16 +48,16 @@ With the virtual environment activated, you can install all the dependencies spe
 pip install -r requirements.txt
 ```
 
-### 4. Navigate to the vendormetric Directory
+### 5. Navigate to the vendormetric Directory
 
 ```shell
 cd vendormetric
 ```
-### 4. Run the server
+### 6. Run the server
 ```shell
 python manage.py runserver
 ```
-### There are three endpoints
-##### 1. "vendors": "http://localhost:8000/api/vendors/"
-##### 2. "purchase_orders": "http://localhost:8000/api/purchase_orders/"
-##### 3. "Doumnents "http://localhost:8000/api/docs/swagger-ui/
+### Once the server is running, you can access the following endpoints:
+- Vendors: http://localhost:8000/api/vendors/
+- Purchase Orders: http://localhost:8000/api/purchase_orders/
+- API Documentation (Swagger UI):  http://localhost:8000/api/docs/swagger-ui/
